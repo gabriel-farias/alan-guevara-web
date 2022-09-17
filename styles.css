@@ -14,6 +14,7 @@ font-family: 'Poppins', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -62,8 +63,21 @@ main{
     height: 100%;
     border-bottom: 5px solid var(--white);
 }
-.tweeter{
-    padding: 70px 0px 20px 50px;
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    height: 600px;
+    width: 40%;
+    padding: 0px 0px 20px 50px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+.bienvenidos h1{
+    font-size:3em;
+}
+.bienvenidos h2{
+    font-size: 2em;
 }
 
 .trayectoria{
@@ -78,9 +92,89 @@ main{
     color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
-.trayectoria ul{
-    list-style: none;
+.container__cards{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.card{
+    border-radius: 15px;
+    background-color: var(--black);
+    padding: 5px;
+}
+.card img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card__title{
+    padding: 5px;
+}
+.card__info{
     font-size: 14px;
+    padding: 5px;
+}
+
+.about-me{
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    padding: 50px;
+    gap: 100px;
+}
+.about-me__info{
+    display: flex;
+    flex-direction:column ;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 60%; 
+}
+.about-me__info h2{
+    font-size: 2.5em;
+}
+.about-me__info p{
+    padding: 10px;
+}
+
+.about-me__image{
+    display: flex;
+    width: 60%;
+    background: url(./assets/logo\ alan\ monocromo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    box-shadow: 100px 300px 500px black inset;
+
+}
+.button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--red);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgb(71, 16, 16) inset;
+    align-self: center;
+}
+
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    background: var(--black);
+    color: var(--white);
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 100px;
+}
+.sponsors__images{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 footer{
