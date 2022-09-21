@@ -4,10 +4,11 @@
 font-family: 'Poppins', sans-serif; */
 
 :root{
-    --blue  : #012188;
-    --red   : #E20222;
-    --white : #F2F3F7;
-    --black : #080B16;
+    --blue   : #012188;
+    --blue-op: #012088ab;
+    --red    : #E20222;
+    --white  : #F2F3F7;
+    --black  : #080B16;
 }
 
 *{
@@ -21,17 +22,47 @@ font-family: 'Poppins', sans-serif; */
 header{
     width: 100%;
     background: var(--white);
-    height:110px;
+    height:80px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 5px 15px;
     border-bottom: 5px  solid var(--blue);
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .logo img{
-    width: 300px;
+    width: 210px;
+}
+
+.menu-toggle{
+    display:none;
+}
+
+.toggle{
+    display: none;
+    text-align: center;
+    width: 200px;
+}
+.toggle li{
+    display: block;
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Popins', sans-serif;
+}
+.toggle li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-toggle:checked + .toggle{
+    display: block;
+    position: absolute;
+    right: -10px;
+    top:80px;
 }
 .menu{
     font-family: 'Poppins', sans-serif;
@@ -39,7 +70,7 @@ header{
     list-style: none;
     display: flex;
     gap: 50px;
-    padding: 30px 20px;
+    padding: 20px 20px;
     border-radius: 15px;
 }
 .menu li a{
@@ -51,7 +82,18 @@ header{
     color: var(--blue);
 
 }
+
+.menu-button{
+    display: none;
+    /* display: flex;
+    flex-direction: column;   <----  para el responsive*/
+    margin: 0 auto;
+    width: 40px;
+    height: 36px;
+}
+
 main{
+    margin-top: 80px;
     border-top: 10px  solid var(--red);
     border-bottom: 10px  solid var(--red);
 }
@@ -66,9 +108,10 @@ main{
 .bienvenidos{
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     height: 600px;
     width: 40%;
+    min-width: 300px;
     padding: 0px 0px 20px 50px;
     color: var(--white);
     font-family: 'Poppins', sans-serif;
@@ -93,12 +136,14 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 .container__cards{
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    
+    justify-content: center;
 }
 .card{
+    max-width: 290px;
+    min-width: 200px;
     border-radius: 15px;
     background-color: var(--black);
     padding: 5px;
@@ -119,15 +164,16 @@ main{
     background: var(--black);
     color: var(--white);
     display: flex;
+    flex-wrap: wrap;
     padding: 50px;
-    gap: 100px;
+    justify-content: center;
 }
 .about-me__info{
     display: flex;
     flex-direction:column ;
     gap: 10px;
     font-family: 'Poppins', sans-serif;
-    width: 60%; 
+    width: 50%; 
 }
 .about-me__info h2{
     font-size: 2.5em;
@@ -138,7 +184,7 @@ main{
 
 .about-me__image{
     display: flex;
-    width: 60%;
+    width: 50%;
     background: url(./assets/logo\ alan\ monocromo.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -146,6 +192,9 @@ main{
     justify-content: center;
     box-shadow: 100px 300px 500px black inset;
 
+}
+.about-me__image img{
+    max-height: 600px;
 }
 .button{
     width: 150px;
@@ -169,12 +218,24 @@ main{
     gap: 30px;
     font-family: 'Poppins', sans-serif;
     padding: 50px 100px;
+    border-top: 3px solid rgb(27, 27, 27);
 }
 .sponsors__images{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    background-color: #012188;
+    background-image: linear-gradient(90deg, #021861 0%, #050b2c 30%, #000000 100%);
 }
 
 footer{

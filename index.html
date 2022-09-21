@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animations.css">
     <title>Alan Guevara Oficial</title>
   </head>
   <body>
@@ -13,7 +15,24 @@
         <img src=".//assets/logo alan colores.png" alt="logo-Alan Guevara" />
       </div>
       <nav>
-        <div class="redes-sociales"></div>
+        <label for="menu-toggle">
+          <div class="menu-button">
+            <img
+              src="./assets/burger.png"
+              alt="menu-hamburguesa"
+              class="header__burguer--logo"
+              width="32px"
+            />
+          </div>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="toggle">
+          <li><a href="#">Home</a></li>
+          <li><a href="#trayectoria">Trayectoria</a></li>
+          <li><a href="#about-me">Sobre mi</a></li>
+          <li><a href="#">Merchandasing</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
         <ul class="menu">
           <li><a href="#">Home</a></li>
           <li><a href="#trayectoria">Trayectoria</a></li>
@@ -102,7 +121,7 @@
           >
         </div>
         <div class="about-me__image">
-          <img src="./assets/alan-guevara.png" alt="" />
+          <img src="./assets/alan-guevara.png" alt="alan" />
         </div>
       </section>
       <section class="sponsors">
@@ -118,6 +137,11 @@
       </section>
       <section class="contacto">
         <h2>Contacto</h2>
+        <img src="./assets/mail.png" width="32px" alt="mail"><p> correo@correo.com</p>
+        <h2>Redes</h2>
+        <img src="./assets/instagram.png" width="32px" alt="instagram">
+        <img src="./assets/facebook.png" width="32px" alt="facebook">
+        <img src="" alt="twitter">
       </section>
     </main>
     <footer></footer>
