@@ -166,6 +166,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
+    padding-top: 100px;
     justify-content: center;
 }
 .about-me__info{
@@ -237,6 +238,83 @@ main{
     background-color: #012188;
     background-image: linear-gradient(90deg, #021861 0%, #050b2c 30%, #000000 100%);
 }
+
+.contacto__correo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contacto__redes{
+    display: grid;
+    grid-template-columns: repeat(2 , 40px);
+    align-content: center;
+    
+}
+
+/* ---------inicio tienda--------- */
+
+.tienda{
+    display: grid;
+    grid-template-columns: repeat(2 , 500px);
+    grid-template-rows: auto;
+    padding: 100px;
+    gap:50px;
+    background: var(--black);
+}
+.product__card{
+    display: flex;
+   
+}
+
+.product__card img{
+    width: 300px;
+    height: min-content;
+}
+
+/* ---------fin tienda--------- */
+
+/* -------inicio log in-------- */
+
+.login, .registro{
+    display: flex;
+    flex-direction: column;
+    background-color: #012188;
+    background-image: linear-gradient(90deg, #021861 0%, #04081f 100%);
+    font-family: 'Poppins';
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    border-bottom:5px solid var(--red);
+}
+.link-registrarse{
+    text-decoration: none;
+    color: var(--red);
+    text-shadow: 2px 2px 1px var(--black);
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.caja-input{
+    height: 30px;
+    background: var(--black);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.form a{
+    text-decoration: none;
+}
+
+/* -------- fin log in -------- */
 
 footer{
     border-top: 5px  solid var(--white);
