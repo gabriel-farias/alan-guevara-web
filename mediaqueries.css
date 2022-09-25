@@ -40,10 +40,14 @@
     .about-me__info{
         width: 100%;
     }
+    .login , .registro{
+        text-align: center;
+    }
     .tienda{
         grid-template-columns: 0.7fr;
         padding: 10px;
         justify-content: center;
+        
     }
     .product__card{
         flex-direction: column;
@@ -75,14 +79,14 @@
     .sponsors{
         text-align: center;
     }
-    footer{
+   
+    .contacto{
+        padding: 50px 0px 50px 120px;
+    }
+     footer{
         font-size: 12px;
         padding: 0px;             
     }
-    .contacto{
-        padding: 50px 10px;
-    }
-    
     footer p{
         display: flex;
         align-items: center;
