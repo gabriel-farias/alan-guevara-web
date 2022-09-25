@@ -259,16 +259,29 @@ main{
     grid-template-rows: auto;
     padding: 100px;
     gap:50px;
-    background: var(--black);
+    background: var(--white);
+    
 }
 .product__card{
     display: flex;
-   
+    font-family: 'Poppins';
+    gap: 20px;
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .product__card img{
-    width: 300px;
-    height: min-content;
+    width: 50%;
+    height: min-content; 
+}
+.product__info{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 14px;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: stretch; 
 }
 
 /* ---------fin tienda--------- */
@@ -317,8 +330,19 @@ main{
 /* -------- fin log in -------- */
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 5px  solid var(--white);
     background: var(--black);
     height: 20vh;
+    color: var(--white);
+    font-family: 'Poppins';
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
