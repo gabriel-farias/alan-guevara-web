@@ -5,7 +5,7 @@ font-family: 'Poppins', sans-serif; */
 
 :root {
   --blue: #012188;
-  --blue-op: #012088de;
+  --blue-op: #012088f8;
   --red: #e20222;
   --white: #f2f3f7;
   --black: #080b16;
@@ -44,6 +44,7 @@ header {
   display: none;
   text-align: center;
   width: 200px;
+  border-top: 10px solid var(--red);
 }
 .toggle li {
   display: block;
@@ -60,7 +61,7 @@ header {
   display: block;
   position: absolute;
   right: -10px;
-  top: 80px;
+  top: 70px;
 }
 .menu {
   font-family: "Poppins", sans-serif;
