@@ -1,19 +1,22 @@
 @media screen and (min-width: 1500px) {
-  body{
+  body {
     background-color: black;
-    
   }
-  header{
+  header {
     justify-content: space-around;
   }
-  .hero{
+  .hero {
     max-width: 1800px;
     box-shadow: 600px 100px 500px black inset;
   }
-  .about-me , .hero , .contacto h2 , .contacto__correo, .contacto__redes{
+  .about-me,
+  .hero,
+  .contacto h2,
+  .contacto__correo,
+  .contacto__redes {
     margin-left: 10%;
     margin-right: 10%;
-  }  
+  }
 }
 
 @media screen and (max-width: 1024px) {
